@@ -6,10 +6,12 @@ import org.springframework.data.mongodb.core.mapping.Document;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 import telran.probes.dto.AccountDto;
 
 @Document(collection="accounts")
 @Getter
+@Setter
 @NoArgsConstructor
 @AllArgsConstructor
 public class Account {

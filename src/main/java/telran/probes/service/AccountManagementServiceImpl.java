@@ -41,6 +41,7 @@ public class AccountManagementServiceImpl implements AccountingManagementService
 			throw new IllegalStateException();
 		}
 		log.debug("account with id: {} has been removed", email);
+		account.setHashPassword("${DEFAULT_PASSWORD}");
 		return account.build();
 	}
 
